@@ -4,7 +4,7 @@ Welcome to my personal website project! I'm a life long Learner from Indonesia w
 Check out my website here:  [indahmutiah.com](https://indahmutiah.com)
 
 # Preview
-| ![Preview 1](prev1.PNG)  ![Preview 2](prev2.PNG) |
+ ![Preview 1](prev1.PNG)  ![Preview 2](prev2.PNG)
 
 # Keep in Touch 
 **Open to Collaboration opportunity**,  Let's work together and create amazing projects  :handshake:
