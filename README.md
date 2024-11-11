@@ -6,7 +6,7 @@ Check out my website here: [indahmutiah.com](https://indahmutiah.com)
 
 # Preview
 
-![Preview 1](preview-1.png) ![Preview 2](preview-2.png)
+![Preview 1](assets/preview-1.png) ![Preview 2](assets/preview-2.png)
 
 # Keep in Touch
 
