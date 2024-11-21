@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .carousel-card {
-    min-width: 100%;
+    min-width: 720px;
     background-color: #241b32;
     border-radius: 15px;
     padding: 20px;
@@ -32,7 +32,11 @@ body {
 }
 
 .carousel-card img {
-    width: 100%;
+    width: 750px;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.tools img{
+    width: 24px;
 }
