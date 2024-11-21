@@ -126,10 +126,9 @@ main.opening {
 }
   
 .card-opening .head-2 span {
-    color: #ffc107; /* Warna teks spesifik */
+    color: #ffc107;
 }
-  
-  /* Ikon sosial */
+
 .social-icons {
     display: flex;
     gap: 15px;
@@ -169,9 +168,9 @@ section{
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 25px;
+    left: -5px;
     width: 4px;
-    background-color: #ffffff; /* Warna garis */
+    background-color: #ffffff;
 }
 .timeline {
     list-style: none;
@@ -182,7 +181,7 @@ section{
 .timeline-circle {
     position: absolute;
     margin-top: 69px;
-    left: 18px;
+    left: -12px;
     width: 18px;
     height: 16px;
     background-color: #ffffff;
@@ -245,43 +244,76 @@ font-weight: 700;
     margin-top: 10px;
 }
 
-.carousel-card {
-    min-width: 460px;
-    background-color: #1b1e36;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    display: flex;
+/*** PAGE WORKS ***/
+.job-container {
+    display: flex; /* Membuat elemen anak sejajar secara horizontal */
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
+    gap: 20px; /* Memberikan jarak antara h2 dan card */
+  }
+.card-job {
+    background-color: #1b1e36;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(255, 251, 251, 0.2);
 }
 
 .info-icons {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between; /* Memberikan jarak di antara elemen */
+    gap: 15px; /* Jarak antar elemen */
+    margin-bottom: 15px;
+  }
+  
+  .info-icons img {
+    width: 32px;
+    height: auto;
+  }
+  
+  .info-icons div {
+    display: flex;
+    align-items: center; /* Vertikal sejajar antara gambar dan teks */
+    gap: 5px; /* Jarak kecil antara ikon dan teks */
+  }
+  
+  .info-icons p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff; /* Pastikan teks terlihat jika background gelap */
+  }
+  
+
+.job-image {
     width: 100%;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.info-icons div {
-    flex: 1;
-}
-
-.info-icons p {
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.carousel-card img {
-    width: 750px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
-
-.tools img{
+  
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+  
+h4 {
+    margin-top: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+  
+.tools {
+    display: flex;
+    gap: 10px;
+}
+  
+.tool-icon {
     width: 24px;
+    height: 24px;
 }
+  
 
 footer{
     text-align: center;
