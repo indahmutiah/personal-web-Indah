@@ -246,25 +246,25 @@ font-weight: 700;
 
 /*** PAGE WORKS ***/
 .job-container {
-    display: flex; /* Membuat elemen anak sejajar secara horizontal */
+    display: flex; 
     align-items: flex-start;
     flex-direction: column;
-    gap: 20px; /* Memberikan jarak antara h2 dan card */
+    gap: 20px; 
   }
 .card-job {
     background-color: #1b1e36;
     color: #ffffff;
     border-radius: 10px;
+    margin-bottom: 20px;
     padding: 20px;
-    width: 400px;
     box-shadow: 0px 4px 8px rgba(255, 251, 251, 0.2);
 }
 
 .info-icons {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Memberikan jarak di antara elemen */
-    gap: 15px; /* Jarak antar elemen */
+    justify-content: space-between; 
+    gap: 1px;
     margin-bottom: 15px;
   }
   
@@ -275,14 +275,14 @@ font-weight: 700;
   
   .info-icons div {
     display: flex;
-    align-items: center; /* Vertikal sejajar antara gambar dan teks */
-    gap: 5px; /* Jarak kecil antara ikon dan teks */
+    align-items: center;
+    gap: 5px;
   }
   
   .info-icons p {
     margin: 0;
     font-size: 14px;
-    color: #ffffff; /* Pastikan teks terlihat jika background gelap */
+    color: #ffffff; 
   }
   
 
