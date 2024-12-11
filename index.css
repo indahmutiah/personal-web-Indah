@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -21,18 +21,17 @@ body {
   transition: color 0.3s ease;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
     0 0 10px rgba(255, 255, 255, 0.1);
-  /* Glow putih / Efek lebih terang */
 }
 
 .nav-list {
   display: flex;
   font-size: 9px;
-  gap: 25px
+  gap: 25px;
+  list-style: none;
 }
 
 .nav-list li {
   position: relative;
-  
 }
 
 .nav-list a:hover {
@@ -40,21 +39,22 @@ body {
 }
 
 .logo {
-  width: 75px;
+  width: 52px;
   height: auto;
 }
 
 .theme-button img {
-  width: 32px;
+  width: 24px;
 }
 
 .theme-button {
   background: #f1a206;
   border: none;
   cursor: pointer;
-  font-size: 1.5rem;
   transition: color 0.3s ease;
   border-radius: 5px;
+  margin-right: 2px;
+  padding: 0.25rem;
   align-items: center;
 }
 
@@ -103,13 +103,13 @@ main.opening {
 }
 
 .card-opening p {
-  font-size: 1rem;
+  font-size: 16px;
   margin-bottom: 10px;
   font-weight: 300;
 }
 
 .card-opening .head-2 {
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -167,15 +167,16 @@ main.opening {
 .timeline {
   list-style: none;
   justify-content: center;
-  margin: 20px;
+  margin: 10px;
+  padding: 10px 10px;
   position: relative;
 }
 .timeline-circle {
   position: absolute;
-  margin-top: 69px;
+  margin-top: 20px;
   left: -12px;
   width: 18px;
-  height: 16px;
+  height: 18px;
   background-color: #ffffff;
   border-radius: 50%;
   z-index: 1;
@@ -183,9 +184,10 @@ main.opening {
 }
 .timeline-item {
   background-color: #1b1e36;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
   border-radius: 8px;
+  max-width: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .timeline-item h3 {
@@ -210,11 +212,11 @@ main.opening {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   flex: 1;
-  min-width: 300px;
+  min-width: 267px;
 }
 
 .card h2 {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -227,6 +229,7 @@ main.opening {
 
 .card ul li {
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .skills-icons {
@@ -242,14 +245,13 @@ main.opening {
   align-items: flex-start;
   flex-direction: column;
   gap: 20px;
-
 }
 .card-job {
   background-color: #1b1e36;
   color: #ffffff;
   width: 100%;
   position: relative;
-  max-width: 300px;
+  max-width: 240px;
   border-radius: 10px;
   margin: 0 auto;
   padding: 20px 20px;
@@ -258,14 +260,14 @@ main.opening {
 
 .info-icons {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   gap: 1px;
   margin-bottom: 15px;
 }
 
 .info-icons img {
-  width: 32px;
+  width: 24px;
   height: auto;
 }
 
@@ -291,6 +293,7 @@ ul {
   list-style-type: disc;
   padding-left: 20px;
   margin: 10px 0;
+  font-size: 14px;
 }
 
 h4 {
@@ -299,15 +302,6 @@ h4 {
   text-transform: uppercase;
 }
 
-.tools {
-  display: flex;
-  gap: 10px;
-}
-
-.tool-icon {
-  width: 24px;
-  height: 24px;
-}
 
 .freelance-container {
   display: flex;
@@ -326,7 +320,7 @@ h4 {
   color: #ffffff;
   border-radius: 10px;
   padding: 20px;
-  width: 320px;
+  width: 240px;
   box-shadow: 0px 4px 8px rgba(255, 251, 251, 0.2);
 }
 
@@ -341,9 +335,28 @@ h4 {
   font-weight: 200;
   font-size: 16px;
 }
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
 .tools img {
   width: 32px;
 }
+
 .tools-spreadsheet img {
   width: 100px;
 }
@@ -352,9 +365,8 @@ h4 {
   background-color: #1b1e36;
   position: relative;
   border-radius: 10px;
-  width: 100%;
-  max-width: 385px;
-  padding-left: 5px;
+  max-width: 282px;
+  padding: 10px;
   margin: 0 auto;
   align-items: center;
   box-shadow: 0px 4px 8px rgba(255, 251, 251, 0.2);
@@ -367,8 +379,8 @@ h4 {
 }
 .contact-form input,
 .contact-form textarea {
-  width: 95%;
-  padding: 10px;
+  width: 220px;
+  padding: 10px 20px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -419,34 +431,249 @@ footer {
 
   .nav-list {
     display: flex;
-    list-style: none;
     gap: 25px;
     flex-direction: row;
     position: relative;
     top: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 9px;
+  }
+
+  .nav-list li {
+    list-style: none;
   }
 
   .navigation {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 20px;
+    padding: 10px 80px;
   }
 
-  .contact-container{
+  .logo {
+    width: 75px;
+    height: auto;
+    margin: auto;
+  }
+
+  .theme-button img {
+    width: 32px;
+  }
+
+  .contact-container {
     max-width: 700px;
     padding: 10px;
   }
 
-  .job-container{
-    flex-wrap: wrap;
-    justify-content: space-between;
-  
+  main.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 40px;
   }
 
-  .card-job{
+  .card-opening p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+
+  .card-opening .head-2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .timeline {
+    padding: 20px 30px;
+  }
+  .timeline-item {
+    background-color: #1b1e36;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    max-width: 460px;
+    box-shadow: 0 1px 5px rgba(250, 249, 249, 0.5);
+  }
+
+  .card {
+    background-color: #1b1e36;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(250, 249, 249, 0.5);
+    flex: 1;
+    min-width: 260px;
+  }
+
+  main.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 40px;
+  }
+
+  .job-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 750px;
+  }
+
+  .card-job {
+    background-color: #1b1e36;
+    color: #ffffff;
     width: 100%;
     position: relative;
-    max-width: 685px;
+    max-width: 700px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    box-shadow: 0px 4px 8px rgba(255, 251, 251, 0.2);
+  }
+
+  .freelance-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .card-freelance {
+    background-color: #1b1e36;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0px 4px 8px rgba(255, 251, 251, 0.2);
+  }
+
+  .card-freelance img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .job-role {
+    font-weight: 200;
+    font-size: 16px;
+  }
+  .info-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1px;
+    margin-bottom: 15px;
+  }
+  
+  .info-icons img {
+    width: 32px;
+    height: auto;
+  }
+  
+  .info-icons div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .info-icons p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .tools img {
+    width: 32px;
+  }
+  .tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tool-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .tools-spreadsheet img {
+    width: 100px;
+  }
+
+  .contact-container {
+    background-color: #1b1e36;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 385px;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(255, 251, 251, 0.2);
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #09acf8;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  .contact-form .button {
+    background-color: #0a9add;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .contact-form .button:hover {
+    background-color: #45a049;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  footer {
+    text-align: center;
   }
 }

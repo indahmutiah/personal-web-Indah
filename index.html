@@ -12,21 +12,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
+    <!-- Javascript -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta name="description" content="Indah Mutiah MZ Personal Website" />
   </head>
   <body>
     <header>
       <nav class="navigation">
-        <a href="/">
-          <img class="logo" src="/assets/favicon/logo.png" alt="Logo" />
-        </a>
-
-        <ul class="nav-list">
+        <div class="flex items-center">
+          <a href="/">
+            <img
+              class="logo w-16 h-auto"
+              src="/assets/favicon/logo.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <ul class="nav-list ">
           <li>
-            <a href="/">Home</a>
+            <a href="/" >Home</a>
           </li>
           <li>
-            <a href="/works">Works</a>
+            <a href="/works" >Works</a>
           </li>
           <!-- <li>
             <a href="/research">Research</a>
@@ -35,12 +42,16 @@
             <a
               href="https://drive.google.com/file/d/1h3x2ne9mK0LSyv7DN0kaCt6HeAKXdl2L/view?usp=sharing"
               target="_blank"
+              class="hover:text-blue-400 transition"
             >
               CV
             </a>
           </li>
         </ul>
-        <button id="themeToggle" class="theme-button">
+        <button
+          id="themeToggle"
+          class="theme-button "
+        >
           <img src="/assets/icons/sun.svg" />
         </button>
       </nav>
@@ -79,7 +90,7 @@
 
       <section class="section flex-col">
         <div class="overviews">
-          <h2 class="head-2">Indah Mutiah Utami. MZ 🧕</h2>
+          <h2 class="head-2 text-xl">Indah Mutiah Utami. MZ 🧕</h2>
           <p>💻 QA / Soft. Dev / DS</p>
         </div>
         <article class="card-overview">
@@ -101,8 +112,12 @@
         </article>
       </section>
 
-      <section class="section flex-col">
-        <h2 class="head-2">Education ✍</h2>
+      <section class="section">
+        <h2
+          class="head-2 flex justify-between text-xl"
+        >
+          Education ✍
+        </h2>
         <ul class="timeline">
           <li class="timeline-item">
             <span class="timeline-circle"></span>
@@ -126,7 +141,7 @@
       </section>
 
       <section class="section flex-col">
-        <h2 class="head-2">Skills 💻</h2>
+        <h2 class="head-2 text-2xl">Skills 💻</h2>
         <div class="card-skills flex-wrap">
           <div class="card">
             <h2>Quality Assurance</h2>
