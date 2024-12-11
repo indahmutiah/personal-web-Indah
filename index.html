@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Javascript -->
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="description" content="Indah Mutiah MZ Personal Website" />
@@ -28,12 +33,12 @@
             />
           </a>
         </div>
-        <ul class="nav-list ">
+        <ul class="nav-list">
           <li>
-            <a href="/" >Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="/works" >Works</a>
+            <a href="/works">Works</a>
           </li>
           <!-- <li>
             <a href="/research">Research</a>
@@ -48,17 +53,14 @@
             </a>
           </li>
         </ul>
-        <button
-          id="themeToggle"
-          class="theme-button "
-        >
+        <button id="themeToggle" class="theme-button">
           <img src="/assets/icons/sun.svg" />
         </button>
       </nav>
     </header>
 
     <main class="opening">
-      <section class="section profile-container">
+      <section class="section profile-container animate-on-scroll" data-animation="animate__fadeInUp">
         <div class="my-profile">
           <img src="/assets/images/indahmutiah.jpg" alt="Indah Mutiah" />
         </div>
@@ -88,7 +90,7 @@
         </div>
       </section>
 
-      <section class="section flex-col">
+      <section class="section flex-col animate-on-scroll" data-animation="animate__fadeInUp">
         <div class="overviews">
           <h2 class="head-2 text-xl">Indah Mutiah Utami. MZ 🧕</h2>
           <p>💻 QA / Soft. Dev / DS</p>
@@ -112,12 +114,8 @@
         </article>
       </section>
 
-      <section class="section">
-        <h2
-          class="head-2 flex justify-between text-xl"
-        >
-          Education ✍
-        </h2>
+      <section class="section animate-on-scroll" data-animation="animate__fadeInUp">
+        <h2 class="head-2 flex justify-between text-xl">Education ✍</h2>
         <ul class="timeline">
           <li class="timeline-item">
             <span class="timeline-circle"></span>
@@ -140,7 +138,7 @@
         </ul>
       </section>
 
-      <section class="section flex-col">
+      <section class="section flex-col animate-on-scroll" data-animation="animate__fadeInUp">
         <h2 class="head-2 text-2xl">Skills 💻</h2>
         <div class="card-skills flex-wrap">
           <div class="card">
@@ -220,4 +218,25 @@
       <p>&copy; 2024 Indah Mutiah MZ. All Rights Reserved.</p>
     </footer>
   </body>
+  <script>
+    // Menambahkan class "animate__animated" dan animasi lain saat elemen terlihat di viewport
+    function addScrollAnimation() {
+      const elements = document.querySelectorAll(".animate-on-scroll");
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate__animated", entry.target.dataset.animation);
+            observer.unobserve(entry.target); // Menghapus observer setelah animasi selesai
+          }
+        });
+      });
+  
+      elements.forEach((el) => observer.observe(el));
+    }
+  
+    // Menjalankan fungsi ketika DOM siap
+    document.addEventListener("DOMContentLoaded", addScrollAnimation);
+  </script>
+  
 </html>
