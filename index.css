@@ -609,16 +609,34 @@ footer {
     padding: 0;
     display: block;
   }
-  .tools-spreadsheet img {
-    width: 100px;
+  .tools-spreadsheet {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 10px;
+  }
+  .text-icon {
+    background-color: rgb(96, 102, 122);
+    width: 120px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 2px;
   }
 
   .contact-container {
     background-color: #1b1e36;
     position: relative;
     border-radius: 10px;
-    width: 100%;
-    max-width: 385px;
+    width: 700px;
+    max-width: 785px;
     padding: 20px;
     margin: 0 auto;
     align-items: center;

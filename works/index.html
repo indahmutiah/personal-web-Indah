@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <meta name="description" content="Indah Mutiah MZ Personal Website" />
   </head>
   <body>
@@ -46,7 +50,7 @@
       </nav>
     </header>
     <main class="opening">
-      <section>
+      <section class="animate-on-scroll" data-animation="animate__fadeInUp">
         <div class="job-container">
           <h2 class="head-2">My Job Journey</h2>
           <div class="card-job">
@@ -267,7 +271,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="animate-on-scroll" data-animation="animate__fadeInUp">
         <div class="freelance-container">
           <h2 class="head-2">My Freelance Projects</h2>
           <div class="cards-wrapper">
@@ -329,11 +333,8 @@
               </p>
               <h4>Tools</h4>
               <div class="tools-spreadsheet">
-                <img
-                  class="tool-icon"
-                  src="/assets/icons/spreadsheet.svg"
-                  alt="spreadsheet"
-                />
+                <p class="text-icon">Spreadsheet</p>  
+                <p class="text-icon">GitHub</p> 
               </div>
             </div>
           </div>
@@ -384,4 +385,28 @@
       <p>&copy; 2024 Indah Mutiah MZ. All Rights Reserved.</p>
     </footer>
   </body>
+  <!-- Javascript -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script>
+    // Menambahkan class "animate__animated" dan animasi lain saat elemen terlihat di viewport
+    function addScrollAnimation() {
+      const elements = document.querySelectorAll(".animate-on-scroll");
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate__animated", entry.target.dataset.animation);
+            observer.unobserve(entry.target); // Menghapus observer setelah animasi selesai
+          }
+        });
+      });
+  
+      elements.forEach((el) => observer.observe(el));
+    }
+  
+    // Menjalankan fungsi ketika DOM siap
+    document.addEventListener("DOMContentLoaded", addScrollAnimation);
+  </script>
+
+
 </html>
