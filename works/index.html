@@ -102,7 +102,10 @@
               />
             </div>
           </div>
-          <div class="card-job animate-on-scroll" data-animation="animate__fadeInUp">
+          <div
+            class="card-job animate-on-scroll"
+            data-animation="animate__fadeInUp"
+          >
             <img
               src="/assets/images/growtika-2.jpg"
               alt="Job Image"
@@ -187,7 +190,10 @@
               />
             </div>
           </div>
-          <div class="card-job animate-on-scroll" data-animation="animate__fadeInUp">
+          <div
+            class="card-job animate-on-scroll"
+            data-animation="animate__fadeInUp"
+          >
             <img
               src="/assets/images/growtika-3.jpg"
               alt="Job Image"
@@ -274,7 +280,7 @@
       <section class="animate-on-scroll" data-animation="animate__fadeInUp">
         <div class="freelance-container">
           <h2 class="head-2">My Freelance Projects</h2>
-          <div class="cards-wrapper">
+          <div class="card-skills flex-wrap">
             <div class="card-freelance">
               <img src="/assets/images/samitech.jpg" />
               <h3>Samitech - E-Presensi</h3>
@@ -290,11 +296,16 @@
               </p>
               <h4>Tools</h4>
               <div class="tools">
-                <img
-                  class="tool-icon"
-                  src="/assets/icons/laravel.svg"
-                  alt="laravel"
-                />
+                <div class="skills-badges">
+                  <img
+                    class="tool-icon"
+                    src="/assets/icons/laravel.svg"
+                    alt="laravel"
+                    width="24"
+                  />
+                  <!-- <span class="text-icon">Laravel</span> -->
+                </div>
+
                 <img
                   class="tool-icon"
                   src="/assets/icons/laragon.svg"
@@ -333,56 +344,17 @@
               </p>
               <h4>Tools</h4>
               <div class="tools-spreadsheet">
-                <p class="text-icon">Spreadsheet</p>  
-                <p class="text-icon">GitHub</p> 
+                <p class="text-icon">Spreadsheet</p>
+                <p class="text-icon">GitHub</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="contact-container">
-          <h2 class="head-2">Contact Me!</h2>
-          <p>Interested in developing a project with me, please contact me. </p>
-          <form class="contact-form" method="post">
-            <div class="form-field">
-              <label for="full-name">Full Name*</label>
-              <input
-                id="full-name"
-                name="fullname"
-                type="text"
-                placeholder="Joe Halland"
-                required
-              />
-            </div>
-            <div class="form-field">
-              <label for="email">Email*</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="joe@contact.com"
-                required
-              />
-            </div>
-            <div class="form-field">
-              <label for="message">Message*</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Please provide as much detail as possible to develop the project with me"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="button">Submit Message</button>
-          </form>
-        </div>
-      </section>
     </main>
 
     <footer>
-      <p>&copy; 2024 Indah Mutiah MZ. All Rights Reserved.</p>
+      <p>&copy; 2025 Indah Mutiah MZ. All Rights Reserved.</p>
     </footer>
   </body>
   <!-- Javascript -->
@@ -391,22 +363,23 @@
     // Menambahkan class "animate__animated" dan animasi lain saat elemen terlihat di viewport
     function addScrollAnimation() {
       const elements = document.querySelectorAll(".animate-on-scroll");
-  
+
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate__animated", entry.target.dataset.animation);
+            entry.target.classList.add(
+              "animate__animated",
+              entry.target.dataset.animation
+            );
             observer.unobserve(entry.target); // Menghapus observer setelah animasi selesai
           }
         });
       });
-  
+
       elements.forEach((el) => observer.observe(el));
     }
-  
+
     // Menjalankan fungsi ketika DOM siap
     document.addEventListener("DOMContentLoaded", addScrollAnimation);
   </script>
-
-
 </html>
