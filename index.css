@@ -273,10 +273,10 @@ main.opening {
   font-weight: 600;
   color: #ffffff;
   text-align: center;
-  white-space: nowrap;
+  white-space: normal;
   width: 100%;
   display: block;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 /*** PAGE WORKS ***/
