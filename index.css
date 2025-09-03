@@ -200,10 +200,11 @@ main.opening {
 }
 
 .card-skills {
-  display: flex;
+  max-width: 720px;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .card {
@@ -213,6 +214,7 @@ main.opening {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   flex: 1;
   min-width: 267px;
+  margin-bottom: 25px;
 }
 
 .card h2 {
@@ -353,8 +355,14 @@ h4 {
   gap: 20px;
   justify-content: space-between;
 }
+.freelance-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 .card-freelance {
+  flex-direction: column;
   background-color: #1b1e36;
   color: #ffffff;
   border-radius: 10px;
@@ -508,7 +516,10 @@ footer {
     flex: 1;
     min-width: 260px;
   }
-
+  .card-skills {
+    flex-direction: row;
+    gap: 30px;
+  }
   main.opening {
     display: flex;
     flex-direction: column;
@@ -547,8 +558,12 @@ footer {
     gap: 20px;
     justify-content: space-between;
   }
-
+  .freelance-cards-container {
+    flex-direction: row;
+    gap: 30px;
+  }
   .card-freelance {
+    flex-direction: column;
     background-color: #1b1e36;
     color: #ffffff;
     border-radius: 10px;
